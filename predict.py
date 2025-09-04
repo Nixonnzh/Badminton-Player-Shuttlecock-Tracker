@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 
 from test import predict_location, get_ensemble_weight, generate_inpaint_mask
 from dataset import Shuttlecock_Trajectory_Dataset, Video_IterableDataset
-from utils.general import *
+from utils.tracknet.general import *
 
 
 def predict(indices, y_pred=None, c_pred=None, img_scaler=(1, 1)):
@@ -83,13 +83,14 @@ if __name__ == '__main__':
     parser.add_argument('--traj_len', type=int, default=8, help='length of trajectory to draw on video')
     args = parser.parse_args()
 
-    num_workers = args.batch_size if args.batch_size <= 16 else 16
+    # num_workers = args.batch_size if args.batch_size <= 16 else 16
+    num_workers = 0
     video_file = args.video_file
     video_name = video_file.split('/')[-1][:-4]
     video_range = args.video_range if args.video_range else None
     large_video = args.large_video
     out_csv_file = os.path.join(args.save_dir, f'{video_name}_ball.csv')
-    out_video_file = os.path.join(args.save_dir, f'{video_name}.mp4')
+    out_video_file = os.path.join(args.save_dir, f'{video_name}_output.mp4')
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
