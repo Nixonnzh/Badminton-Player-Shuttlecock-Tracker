@@ -179,7 +179,6 @@ ls ckpts/*.pt  # Check if all model files exist
 ```
 Badminton-Player-Shuttlecock-Tracker/
 ├── main.py                          # Main execution script
-├── model.py                         # TrackNet and InpaintNet model definitions
 ├── ckpts/                          # Pre-trained model checkpoints
 │   ├── TrackNetV3_shuttle_best.pt
 │   ├── InpaintNet_shuttle_best.pt
@@ -187,10 +186,13 @@ Badminton-Player-Shuttlecock-Tracker/
 ├── utils/
 │   ├── tracknet/                    # TrackNet utilities
 │   │   ├── general.py              # General functions
-│   │   ├── dataset.py              # Dataset handling
 │   │   ├── test.py                 # Testing utilities
-│   │   └── visualize.py            # Visualization tools
+│   │   ├── visualize.py            # Visualization tools
+│   │   ├── dataset.py              # Dataset handling
+│   │   └── model.py                # TrackNet and InpaintNet model definitions
+│   │   └── metric.py               # Metric calculation
 │   └── bytetrack/                   # ByteTrack utilities
+│       ├── bytetrack.yaml
 │       ├── yolo_byte_player_tracker.py
 │       └── video_utils.py
 ├── train/                           # Training scripts
