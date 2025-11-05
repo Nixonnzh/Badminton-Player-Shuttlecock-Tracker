@@ -1,6 +1,6 @@
 # Badminton Player-Shuttlecock Tracking System
 
-A comprehensive tracking system that combines **TrackNetV3** (Original Implementation: https://github.com/qaz812345/TrackNetV3) for shuttlecock trajectory prediction and **YOLO11s + ByteTrack** for player detection and tracking. (Y.-J. Chen & Wang, 2024; Khanam & Hussain, 2024; Y. Zhang et al., 2022) The system processes badminton videos to generate output videos with both shuttlecock trajectories and player bounding boxes.
+A Badminton Multi-Object Tracking system that combines **TrackNetV3** (Original Implementation: https://github.com/qaz812345/TrackNetV3) for shuttlecock trajectory prediction and **YOLO11s + ByteTrack** for player detection and tracking. (Y.-J. Chen & Wang, 2024; Khanam & Hussain, 2024; Y. Zhang et al., 2022) I implemented this system in my Data Science Master's Thesis to process badminton videos and generate output videos with both shuttlecock trajectories and player bounding boxes.
 
 ## System Overview
 
