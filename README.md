@@ -183,6 +183,9 @@ Badminton-Player-Shuttlecock-Tracker/
 │   ├── TrackNetV3_shuttle_best.pt
 │   ├── InpaintNet_shuttle_best.pt
 │   └── yolov11s_player_best.pt
+├── media                      # Media directory
+│   ├── images/                 
+│   └── videos/                 
 ├── utils/
 │   ├── tracknet/                    # TrackNet utilities
 │   │   ├── general.py              # General functions
@@ -195,8 +198,8 @@ Badminton-Player-Shuttlecock-Tracker/
 │       ├── bytetrack.yaml
 │       ├── yolo_byte_player_tracker.py
 │       └── video_utils.py
-├── train/                           # Training scripts
-│   ├── train.py                    # Model training
+├── train/                           # Training directory
+│   ├── shuttle_detection/          # Shuttlecock detection training
 │   └── player_detection/           # Player detection training
 └── prediction/                     # Output directory
     ├── {video_name}_ball.csv
