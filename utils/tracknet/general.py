@@ -9,7 +9,7 @@ import pandas as pd
 
 from collections import deque
 from PIL import Image, ImageDraw
-from model import TrackNet, InpaintNet
+from utils.tracknet.model import TrackNet, InpaintNet
 
 # Global variables
 HEIGHT = 288
